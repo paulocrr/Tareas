@@ -28,11 +28,7 @@ char Lower(char *s){
 }
 void strcat(char *t,char *f){
     int i = Len(t);
-    int c = 0;
-    while(c<i){
-        *t++;
-        ++c;
-    }
+    t=t+i;
     while(*t++ = *f++);
 }
 int strend(char *s,char *t){
